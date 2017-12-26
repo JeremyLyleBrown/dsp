@@ -20,7 +20,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > * `pwd`   shows current working directory path
+> > * `mkdir` creates a directory inside the working directory
+> > * `rm -r` deletes a directory
+> > * `touch` creates a new file inside the working directory
+> > * `rm`    deletes a file
+> > * `mv`    renames a file
+> > * `ls -a` lists all files inside the working directory, including hidden files and directories
+> > * `cp`    copies a file from one directory to another
+> > * `cd`    switches into the specified directory
+> > * `sort`  sorts lines of text alphabetically
 
 ---
 
@@ -35,7 +44,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > * `ls`      lists all files and directories in the working directory
+> > * `ls -a`   lists all contents of a directory including hidden files and directories
+> > * `ls -l`   lists all contents of a directory in long format
+> > * `ls -lh`  lists all contents of a directory in long format with readable file size
+> > * `ls -lah` lists all contents of a directory including hidden files and directories in long format with readable file size
+> > * `ls -t`   orders files and directories by the time they were last modified
+> > * `ls -Glp` lists all contents of a directory in long format without group names and with / indicator appended to directories
 
 ---
 
@@ -43,7 +58,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > * `ls -d` displays only directories
+> > * `ls -m` displays the names as a comma-separated list
+> > * `ls -R` displays subdirectories as well
+> > * `ls -u` displays files by the access time
+> > * `ls -t` displays newest files first (based on timestamp)
 
 ---
 
@@ -51,7 +70,10 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > `xargs` reads data from standard input and executes the command (supplied to it as an argument) one or more times based on the input read.
+> > If no command is supplied as an argument to xargs, the default command it executes is `echo`.
+> > For example, if we wanted to search all .txt files in the current directory, we could use the following command: 
+> > `xargs find -name`
+> > then we would pass "\*.txt" as input through stdin by typing it and then tell `xargs` that we're done with the input by pressing `Ctrl+D`.
  
 
