@@ -73,7 +73,7 @@ What does `xargs` do? Give an example of how to use it.
 > > `xargs` reads data from standard input and executes the command (supplied to it as an argument) one or more times based on the input read.
 > > If no command is supplied as an argument to xargs, the default command it executes is `echo`.
 > > For example, if we wanted to search all .txt files in the current directory, we could use the following command: 
-> > `xargs find -name`
-> > then we would pass "\*.txt" as input through stdin by typing it and then tell `xargs` that we're done with the input by pressing `Ctrl+D`.
+> > `xargs find -name`.
+> > Then, we would pass "\*.txt" as input through stdin by typing it and then tell `xargs` that we're done with the input by pressing `Ctrl+D`.
  
 
